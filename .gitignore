@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,dotnetcore,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,dotnetcore,visualstudiocode
 
+### local.
+appsettings.json
+
+
 ### DotnetCore ###
 # .NET Core build folders
 bin/
