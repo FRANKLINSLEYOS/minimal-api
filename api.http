@@ -1,0 +1,36 @@
+#mais informaçoes, no marketplace.visualstudio.com em restclient
+
+@baseUrl=http://localhost:5009
+@action=login
+@email=adm@teste.com
+@senha=123456
+
+@token = 123456
+
+# LOGIN 1
+###
+curl -X 'POST' \
+  '{{baseUrl}}/login' \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "Email":"{{email}}",
+    "Senha":"{{senha}}"
+  }'
+
+### LOGIN 2
+POST http://localhost:5009/login HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+{
+  "Email":"adm@teste.com",
+  "Senha":"123456"
+}
+
+# @GET - 2
+###
+curl -X 'GET' \
+  '{{baseUrl}}/login' \
+  -H 'Accept: application/json' \
+  -H 'Authorization: Bearer {{token}}' \
+
